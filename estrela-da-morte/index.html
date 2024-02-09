@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAL DE NOTÍCIAS GALACTICA</title>
+    <link rel="stylesheet" href="styles/card.css">
+    <!-- defer: indica para o navegador que o script deve ser executado após carregamento da DOM -->
+    <script src="src/Components/CardNews.js" defer></script>
+    <script src="src/Components/TituloDinamico.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Selector -->
+        <card-news
+            autor="Tiago"
+            title="Darth Vader Contrata"
+            link-url="www.google.com"
+            photo="assets/asset-vader.png"
+            content="Darth Vader procura desenvolvedores que sabem trabalhar com componentes."
+        ></card-news>
+
+        <card-news
+            title="Yoda convence republica a utilizar components"
+            link-url="www.google.com/yoda"
+            content="Yoda se pronuncia e choca a republica."
+        ></card-news>
+
+    </div>
+</body>
+</html>
